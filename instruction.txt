@@ -1,0 +1,201 @@
+download and create account
+
+https://blog.zuitt.co/zuitt-basic-web-development-workshop-developer-starter-kit-for-windows/
+
+*Sublime text editor
+-Open folder 
+-ryt click, left side panel
+-index.html 
+-styles.css
+
+
+tips:
+1.type the following HTML THEN TAB (TO START)
+2.ryt click anywhere the terminal then open with browser
+3.<body> here will display all contents </body>
+4.<div> walang katabi</div>
+5.<section>
+6. relative positioning = 
+7. adding comments = ctrl + /
+<!-- Add comments here -->
+8.a = <a href=""></a> (hyperlink reference)
+9.dropdown = show/hide
+
+
+
+
+TIPS: 
+1.CSS DESIGNING (AFTER THE TITLE TYPE THE <LINK THE ENTER>
+
+2.GO TO GOOGLE FONTS (WEBSITE)
+-search (Montserrat), get font 
+-search (roboto), get font
+-get embedded code
+-One Value, Weight 600, Roman
+-Change Styles, Regular 400, One Value 
+
+*Website background 
+-www.svgbackground (Frameworks=templated)
+-Format, Export, since CSS copy 
+-ctrl+Shift+V
+
+
+*Bootstrap = https://getbootstrap.com/
+ILAGAY SA BABA NANG GOOGLE FONT (HEAD) THEN ADD COMMENTS: COPY YUNG CDN
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+ITO NAMAN SA FOOTER  FROM CDN BOOTSTRAP LINK
+<!-- JS BUNDLE -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+     
+      
+*Fun Awesome website
+-https://fontawesome.com/kits
+-https://fontawesome.com/kits/e879bfb017/setup
+copy this sa baba nang JS Bundle:
+-<script src="https://kit.fontawesome.com/e879bfb017.js" crossorigin="anonymous"></script>
+
+then ilagay dun sa link nang codes sa icon
+
+
+
+
+*GitHub (Uploading/Repository Online)
+https://github.com/
+Username:ADELAN2025
+Password:Windows@19912018
+
+-Configure settings
+-Uploading Existing Files
+
+
+
+
+CODES FOR THE INDEX:
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> ADELAN P. SISTOSO / Web Developer Portfolio</title>
+	<!-- External CSS -->
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">">
+
+
+
+</head>
+<body>
+<!--  div tag is used as a container for thr other html elements-->
+	<div class="container">
+		<!-- Start of Landing -->
+ 
+	     <section id="landing">
+	     	<div>
+	     		<img src="images/me.jpg" id="profile">
+
+
+
+			</div>
+                 <h1> Front End Web Developer</h1>
+                 <div>
+                 	<a href="#about">Know more about me...</a>
+                 	<a href="#tools">Know the tools I use...</a>
+
+                 </div>
+                 <a href="mailto:adelan2sistoso@gmail.com">Lets work together</a>
+		</section>
+		<!-- End of landing -->
+
+		<section id="About">
+			<h3>About Me</h3>
+
+			<p>
+				I am Adelan Sistoso just call me dylan for my nickname currently working as Project Development Offier II at the Department of Information and Communications Technology. 
+
+		    </p>
+		    <!-- Start tools -->
+
+		    <section id="tools"> 
+
+		    </section>
+
+                 <h2> Tools</h2>
+            <div>HTML, CSS and Bootstrap  </div>
+           
+<!-- This footer contains the social media pages -->
+<footer>
+	<a href="www.dict.gov.ph" target="blank">
+		  Website ||
+
+		</a>
+
+		<a href="https://www.facebook.com/zuittechcareer" target="Blank" \>
+			Facebook ||
+         </a>
+
+<a href="https://www.facebook.com/zuittechcareer" target="Blank" \>
+			Twitter  ||
+         </a>
+
+
+
+	</footer>
+
+		    </section>
+
+
+			
+
+		</section>
+	</div>
+</body>
+
+</html>
+
+
+
+CODES FOR THE CSS:
+/*
+Syntax for CSS Rule Sets 
+
+Selector {
+	property: value;
+	property: value;
+}
+
+
+*/
+
+/*Universal Selector*/
+
+* { 
+
+   font-family: "Roboto", sans-serif;
+/* pasting with proper indention: ctrl + shift + v */
+ }
+
+body{
+	background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='400' cy='400' r='50%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%230EF'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='400' cy='400' r='70%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%230FF'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='800'/%3E%3Cg fill-opacity='.8'%3E%3Cpath fill='url(%23b)' d='M998.7 439.2c1.7-26.5 1.7-52.7 0.1-78.5L401 399.9c0 0 0-0.1 0-0.1l587.6-116.9c-5.1-25.9-11.9-51.2-20.3-75.8L400.9 399.7c0 0 0-0.1 0-0.1l537.3-265c-11.6-23.5-24.8-46.2-39.3-67.9L400.8 399.5c0 0 0-0.1-0.1-0.1l450.4-395c-17.3-19.7-35.8-38.2-55.5-55.5l-395 450.4c0 0-0.1 0-0.1-0.1L733.4-99c-21.7-14.5-44.4-27.6-68-39.3l-265 537.4c0 0-0.1 0-0.1 0l192.6-567.4c-24.6-8.3-49.9-15.1-75.8-20.2L400.2 399c0 0-0.1 0-0.1 0l39.2-597.7c-26.5-1.7-52.7-1.7-78.5-0.1L399.9 399c0 0-0.1 0-0.1 0L282.9-188.6c-25.9 5.1-51.2 11.9-75.8 20.3l192.6 567.4c0 0-0.1 0-0.1 0l-265-537.3c-23.5 11.6-46.2 24.8-67.9 39.3l332.8 498.1c0 0-0.1 0-0.1 0.1L4.4-51.1C-15.3-33.9-33.8-15.3-51.1 4.4l450.4 395c0 0 0 0.1-0.1 0.1L-99 66.6c-14.5 21.7-27.6 44.4-39.3 68l537.4 265c0 0 0 0.1 0 0.1l-567.4-192.6c-8.3 24.6-15.1 49.9-20.2 75.8L399 399.8c0 0 0 0.1 0 0.1l-597.7-39.2c-1.7 26.5-1.7 52.7-0.1 78.5L399 400.1c0 0 0 0.1 0 0.1l-587.6 116.9c5.1 25.9 11.9 51.2 20.3 75.8l567.4-192.6c0 0 0 0.1 0 0.1l-537.3 265c11.6 23.5 24.8 46.2 39.3 67.9l498.1-332.8c0 0 0 0.1 0.1 0.1l-450.4 395c17.3 19.7 35.8 38.2 55.5 55.5l395-450.4c0 0 0.1 0 0.1 0.1L66.6 899c21.7 14.5 44.4 27.6 68 39.3l265-537.4c0 0 0.1 0 0.1 0L207.1 968.3c24.6 8.3 49.9 15.1 75.8 20.2L399.8 401c0 0 0.1 0 0.1 0l-39.2 597.7c26.5 1.7 52.7 1.7 78.5 0.1L400.1 401c0 0 0.1 0 0.1 0l116.9 587.6c25.9-5.1 51.2-11.9 75.8-20.3L400.3 400.9c0 0 0.1 0 0.1 0l265 537.3c23.5-11.6 46.2-24.8 67.9-39.3L400.5 400.8c0 0 0.1 0 0.1-0.1l395 450.4c19.7-17.3 38.2-35.8 55.5-55.5l-450.4-395c0 0 0-0.1 0.1-0.1L899 733.4c14.5-21.7 27.6-44.4 39.3-68l-537.4-265c0 0 0-0.1 0-0.1l567.4 192.6c8.3-24.6 15.1-49.9 20.2-75.8L401 400.2c0 0 0-0.1 0-0.1L998.7 439.2z'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
+
+ h1, h2, p {
+	
+	font-family: "Montserrat", sans-serif;
+ }
+
+
+
+
